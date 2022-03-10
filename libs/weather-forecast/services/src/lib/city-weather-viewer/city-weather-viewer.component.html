@@ -1,0 +1,6 @@
+<div class="city-weather">
+	<bp-city-weather-viewer-filter [formGroup]="form"
+								   [markAllDirty$]="markAsDirty$"
+								   (onFilterChange)="filterChange($event)"></bp-city-weather-viewer-filter>
+	<ds-data-grid [columns]="columns" [dataSource]="cityWeatherFacade.allCityWeather$ | async"></ds-data-grid>
+</div>

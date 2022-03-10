@@ -1,0 +1,14 @@
+.filters {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	width: 100%;
+	padding: 16px;
+	justify-content: center;
+	align-items: center;
+
+	mat-radio-group {
+		display: flex;
+		gap: 8px;
+	}
+}
