@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
-import { CityFacade, CityWeatherEntity, CityWeatherFacade } from '@bp/weather-forecast/services';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Subject, takeUntil } from 'rxjs';
 import { IDataGridColumn } from '@bp/design-system';
 import { TCityWeatherOutput } from './city-weather-viewer-filter.component';
+import { CityFacade } from '../+state/city.facade';
+import { CityWeatherFacade } from '../+state/city-weather/city-weather.facade';
+import { CityWeatherEntity } from '../+state/city-weather/city-weather.models';
 
 @Component({
 	selector: 'bp-city-weather-viewer',

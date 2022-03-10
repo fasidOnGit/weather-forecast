@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
 import { CityWeatherEntity } from './city-weather.models';
-import { CityEntity } from '@bp/weather-forecast/services';
+import { CityEntity } from '../city.models';
 
 export const getCityWeather = createAction(
 	'[City] Get City Weather by Mode',

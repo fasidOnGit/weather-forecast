@@ -8,7 +8,7 @@ import * as CityFeature from './city.reducer';
 import { WeatherForecastApiService } from '../weather-forecast-api.service';
 import { filter, map, take } from 'rxjs';
 import { ROUTER_NAVIGATION } from '@ngrx/router-store';
-import { CityFacade } from '@bp/weather-forecast/services';
+import { CityFacade } from './city.facade';
 
 @Injectable()
 export class CityEffects {
